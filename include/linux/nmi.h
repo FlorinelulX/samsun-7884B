@@ -119,11 +119,11 @@ static inline void touch_all_softlockup_watchdogs(void) { }
 #endif
 
 #if defined(CONFIG_SEC_DEBUG) && defined(CONFIG_SOFTLOCKUP_DETECTOR)
-extern void sl_softirq_entry(const char *a, void *b);
+extern void sl_softirq_entry(const char *, void *);
 extern void sl_softirq_exit(void);
 unsigned long long get_dss_softlockup_thresh(void);
 #else
-static inline void sl_softirq_entry(const char *, void *) { }
+static inline void sl_softirq_entry(const char *a, void *b) { }
 static inline void sl_softirq_exit(void) { }
 #endif
 
