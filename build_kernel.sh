@@ -8,7 +8,7 @@ export ARCH=arm64
 
 export PLATFORM_VERSION=11
 export ANDROID_MAJOR_VERSION=r
-make -C $(pwd) O=$(pwd)/out KCFLAGS=-w  exynos7885-a10eudcm_defconfig
+make -C $(pwd) O=$(pwd)/out KCFLAGS=-w  exynos7885-jackpotlte_defconfig
 make -C $(pwd) O=$(pwd)/out KCFLAGS=-w  -j16
 
 cp out/arch/arm64/boot/Image $(pwd)/arch/arm64/boot/Image
