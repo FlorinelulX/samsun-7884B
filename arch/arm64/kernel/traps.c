@@ -203,8 +203,6 @@ void dump_backtrace(struct pt_regs *regs, struct task_struct *tsk)
 		}
 #endif
 
-void dbg_snapshot_save_log(int cpu, unsigned long where);
-
 		/* skip until specified stack frame */
 		if (!skip) {
 			dump_backtrace_entry(frame.pc);
