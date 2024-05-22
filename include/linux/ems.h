@@ -238,19 +238,6 @@ static inline void emstune_cpu_update(int cpu, u64 now) { };
 static inline unsigned long emstune_freq_boost(int cpu, unsigned long util) { return util; };
 
 #define emstune_add_request(req)	do { } while(0);
-static void __emstune_add_request(struct emstune_mode_request *req, char *func, unsigned int line) { }
-static void emstune_remove_request(struct emstune_mode_request *req) { }
-static void emstune_update_request(struct emstune_mode_request *req, s32 new_value) { }
-static void emstune_update_request_timeout(struct emstune_mode_request *req, s32 new_value,
-					unsigned long timeout_us) { }
-static void emstune_boost(struct emstune_mode_request *req, int enable) { }
-static void emstune_boost_timeout(struct emstune_mode_request *req, unsigned long timeout_us) { }
-
-static void emstune_mode_change(int next_mode_idx) { }
-
-static int emstune_register_mode_update_notifier(struct notifier_block *nb) { return 0; }
-static int emstune_unregister_mode_update_notifier(struct notifier_block *nb) { return 0; }
-
 static inline int emstune_util_est_group(int st_idx) { return 0; }
 #endif /* CONFIG_SCHED_EMS && CONFIG_SCHED_TUNE */
 
