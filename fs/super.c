@@ -36,6 +36,7 @@
 #include <linux/lockdep.h>
 #include <linux/user_namespace.h>
 #include "internal.h"
+#include <linux/magic.h>
 
 /* @fs.sec -- 89e449513e5bea6196d9aaf62a6936ae -- */
 void (*ufs_debug_func)(void *) = NULL;
