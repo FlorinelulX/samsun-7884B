@@ -32,3 +32,5 @@ obj-$(CONFIG_CPU_FREQ_GOV_SCHEDUTIL) += cpufreq_schedutil.o
 obj-$(CONFIG_MEMBARRIER) += membarrier.o
 obj-$(CONFIG_SCHED_EMS) += ems/
 obj-$(CONFIG_PSI) += psi.o
+
+CFLAGS_fair.o := $(call cc-disable-warning, int-conversion)

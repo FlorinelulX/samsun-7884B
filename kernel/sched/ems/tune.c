@@ -118,7 +118,7 @@ void emstune_mode_change(int next_mode_idx)
 	spin_unlock_irqrestore(&emstune_mode_lock, flags);
 }
 
-int emstune_get_cur_mode()
+int emstune_get_cur_mode(void)
 {
 	return cur_mode->idx;
 }

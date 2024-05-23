@@ -186,7 +186,7 @@ static inline bool lb_sibling_overutilized(int dst_cpu, struct sched_domain *sd,
 {
 	return true;
 }
-static inline bool lbt_overutilized(int cpu, int level)
+static inline bool lbt_overutilized(int cpu, int level, enum cpu_idle_type idle)
 {
 	return false;
 }
