@@ -6,6 +6,7 @@
 #include <linux/pagemap.h>
 #include <linux/string.h>
 #include <asm/unaligned.h>
+#include <linux/magic.h>
 
 #include <sdp/fs_handler.h>
 #include "sdp_crypto.h"
