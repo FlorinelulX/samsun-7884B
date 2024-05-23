@@ -1,0 +1,12 @@
+scripts/kconfig/zconf.tab.o
+scripts/kconfig/zconf.tab.c
+scripts/kconfig/zconf.lex.c
+scripts/kconfig/conf.o
+scripts/kconfig/conf
+scripts/kconfig/.zconf.tab.o.cmd
+scripts/kconfig/.conf.o.cmd
+scripts/kconfig/.conf.cmd
+scripts/basic/modules.order
+scripts/basic/fixdep
+scripts/basic/.fixdep.cmd
+include/generated/autoksyms.h
